@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+    //background:black;
+    //background-image: url('images.jpg');
+     overflow: hidden;
+
+}
+
+.header {
+	
+    //background:blue;
+   //width: 100%;
+    background-image: url('bbqnation-7.jpg');
+    background-position:100%;
+   //background-repeat: no-repeat;
+    text-align: center;
+    padding: 1rem;
+    margin:0px auto;
+	color:black;
+    font-size: 35px;
+	font-family: "Arial", Times, serif;
+    font-weight : bold;
+    
+}
+
+img{
+	filter: blur(5px);
+}
+
+
+
+.footer {
+  position: fixed;
+  background-image: url('bbqnation-7.jpg');
+  color:white;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Arial", Times, serif;
+  font-size: 20px;
+
+}
+
+.body{
+	display: table-cell;
+    	vertical-align: middle;
+}
+
+.reg{
+	
+       position: fixed;
+       margin-left: 170px;
+    	border-left: 1px solid gray;
+    	padding: 1em;
+    	overflow: hidden;
+	color:green;
+	background:pink;
+	
+}
+
+#demo
+{
+	
+	border: 4px solid black;
+	text-allign:center;
+
+}
+
+#f1{
+	font-weight: bold;
+}
+
+.mainsc {
+    background-image: url('hotel.jpg');
+    
+    height: 100%;
+     background-position: center;
+     background-size: cover;
+    // color: white;
+    // font-family: "Courier New", Courier, monospace;
+    // font-size: 25px;
+}
+
+.register{
+ 	background-color: #ff8000;
+	color: black;
+	height:350px;
+    	width: 300px;
+    	border: 5px ;
+    	padding: 10px;
+		padding-top:34px;
+    	margin-top: -37px;
+    	//allign:right;
+	border-radius:25px;
+	text-allign:center;
+}
+
+.bt {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 250px;
+    margin-left: 10%;
+    
+}
+
+
+
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+	<div class="header"> Welcome to Absolute Barbeque !</div>
+
+	<div class="mainsc">
+			<br><h1 style="color:red"> Come Dine with us! </h1>
+			
+
+			<div class="register" style="float:right;">
+				<form id="f1">
+  					Name:&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="firstname"><br><br>
+  					Email:&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="lastname"><br><br>
+  					Contact:&nbsp&nbsp<input type="text" name="lastname"><br><br>
+  					<button type="button" class="bt">Reserve</button>
+				</form>
+				<center><p id="demo" style="font-size:30px"></p></center><br>
+				<center><h2 style="display:inline-block;">Limited Slots Available !!</h2></center>
+
+			</div>
+			
+			<div class="text" style="float:left;">
+				<br> <h3 style="color:black;">Avail this wonderful oppurtunity of 50% off on dine with our new opening</h3>
+				<h3 style="color:black;">Barbeque Nation is an Indian restaurant chain owned by Indore-based Sayaji Hotels Limited. <h3>
+					<h3 style="color:black;"> A place where heart meets soul.
+					Block your  <i style="font-size:24px" class="fa">&#xf073;</i> for the big Event. </h3>
+				
+
+			</div>
+			
+	</div>
+
+
+	
+
+<script>
+
+var countDownDate = new Date("Aug 12, 2017 07:37:25").getTime();
+
+
+var countdownfunction = setInterval(function() {
+
+    
+    var now = new Date().getTime();
+    
+    
+    var distance = countDownDate - now;
+    
+    
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    
+    if (distance < 0) {
+        clearInterval(countdownfunction);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
+<div class="footer"> <p style="text-align:left;">People who love to eat are always the best people.<span style="float:right;">Connect with us 
+	&nbsp&nbsp<a href="https://www.facebook.com/BarbequeNation/"><i style="font-size:24px" class="fa">&#xf230;</i></a>&nbsp&nbsp
+	<a href="https://in.linkedin.com/company/barbeque-nation
+"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>&nbsp&nbsp
+	<a href="https://www.instagram.com/barbequenation/?hl=en"><i style="font-size:24px" class="fa">&#xf16d;</i></a>&nbsp&nbsp
+	<a href="https://plus.google.com/102659242368895427065
+"><i style="font-size:24px" class="fa">&#xf0d5;</i></a>&nbsp&nbsp
+	</span></p>
+</div>
+
+</body>
+</html>
