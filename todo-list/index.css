@@ -1,0 +1,50 @@
+.head {
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	border: 1px solid grey;
+	text-align: center;
+	background-color: black;
+	color: white;
+    width: 107%;
+    margin-left: -4%;
+}
+
+.plus {
+	padding-right: 30px;
+}
+
+.listview {
+	margin: auto;
+	width: 80%;
+	border: 3px solid green;
+	padding: 10px;
+    background: black;
+}
+input, ul {
+	margin: auto;
+	width: 92%;
+	padding: 20px;
+}
+
+input{
+	margin: auto;
+	padding: 20px;
+    width: 83%;
+}
+
+.search{
+    display: inline-flex;
+    width: -webkit-fill-available;
+}
+
+button{
+    color: white;
+    background: black;
+    font-size: 45px;
+}

@@ -1,0 +1,19 @@
+{
+	"data": [
+		{
+			"id": 0,
+			"name": "Full Stack Developement Program",
+			"price": "89,999"
+		},
+		{
+			"id": 1,
+			"name": "Python Automation Testing Program",
+			"price": "64,999"
+		},
+		{
+			"id": 2,
+			"name": "UI/UX Program",
+			"price": "89,999"
+		}
+	]
+}
